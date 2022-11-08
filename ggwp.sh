@@ -1,6 +1,12 @@
 #!/bin/sh
-curl -O --progress-bar http://swcdn.apple.com/content/downloads/57/38/071-97382-A_OEKYSXCO6D/97vrhncortwd3i38zfogcscagmpwksdzce/InstallAssistant.pkg
+mkdir /volumes/untitled/tmp
+mkdir /volumes/untitled/tmp/applications
+cd /volumes/untitled/tmp
 sleep 5
-sudo installer -verboseR -pkg ~/InstallAssistant.pkg -target /applications
+curl -OL --progress-bar https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg
 sleep 5
-sudo "/Applications/Install macOS Big Sur.app/Contents/Resources/startosinstall" --eraseinstall --agreetolicense --nointeraction
+installer -verboseR -pkg /volumes/untitled/tmp/NUKE-2-MONTEREY/InstallAssistant.pkg -target /volumes/untitled/tmp/applications
+sleep 5
+cd /volumes/untitled/tmp/applications
+sleep 5
+"./Install macOS Monterey.app/contents/macos/InstallAssistant_springboard"
