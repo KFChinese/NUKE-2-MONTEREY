@@ -3,7 +3,7 @@ mkdir /volumes/untitled/tmp
 cd /volumes/untitled/tmp
 sleep 5
 ECHO "Downloading MacOS Monterey Install Assistant.pkg"
-curl -OL --progress-bar https://swcdn.apple.com/content/downloads/36/13/012-90254-A_BJQ1VMPD44/z225i7bzise31eo21e4kgfkafz7zq0q9tu/InstallAssistant.pkg
+curl -OL --progress-bar https://swcdn.apple.com/content/downloads/17/14/032-33828-A_KX25OQBX8S/lz9yip4rmenyju8nkv4wpaqtdmvzfogkcb/InstallAssistant.pkg
 sleep 5
 ECHO "Installing Monterey Install Assistant @ /volumes/Untitled/Applications/"
 installer -verboseR -pkg /volumes/untitled/tmp/InstallAssistant.pkg -target "/volumes/untitled/"
